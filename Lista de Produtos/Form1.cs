@@ -58,16 +58,5 @@ namespace Lista_de_Produtos
         {
             MessageBox.Show($"Clicou no botão {((Button)(sender)).TabIndex}");
         }
-
-
-
-        private void lblTitle_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Os berros da cidade de Pandemonio serão ouvidos pelos quatro cantos da Terra");
-        }
-
-        private void FrmShowProducts_Resize(object sender, EventArgs e)
-        {
-        }
     }
 }

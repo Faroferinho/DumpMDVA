@@ -20,12 +20,11 @@ namespace Lista_de_Produtos
         public Product(String Id) 
         {
             identificator = Id;
+
             name = defineValues(1);
             quantity = int.Parse(defineValues(2));
             value = decimal.Parse(defineValues(3));
             picture = Image.FromFile(defineValues(4));
-
-            MessageBox.Show("Criando objeto com Sucesso", "");
         }
 
         private String defineValues(int columnIndex)
@@ -35,16 +34,16 @@ namespace Lista_de_Produtos
             switch (columnIndex)
             {
                 case 1:
-                    returnString = DBConector.readEntry("name", "Products").Replace("§", "");
+                    returnString = DBConector.readEntry("name", "Products", $"ID_Product = \"{identificator}\"").Replace("§", "");
                     break;
                 case 2:
-                    returnString = DBConector.readEntry("quantity", "Products").Replace("§", "");
+                    returnString = DBConector.readEntry("quantity", "Products", $"ID_Product = \"{identificator}\"").Replace("§", "");
                     break;
                 case 3:
-                    returnString = DBConector.readEntry("value", "Products").Replace("§", "");
+                    returnString = DBConector.readEntry("value", "Products", $"ID_Product = \"{identificator}\"").Replace("§", "");
                     break;
                 case 4:
-                    returnString = DBConector.readEntry("picture", "Products").Replace("§", "");
+                    returnString = DBConector.readEntry("picture", "Products", $"ID_Product = \"{identificator}\"").Replace("§", "");
 
                     break;
                 default:

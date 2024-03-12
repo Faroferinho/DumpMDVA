@@ -77,6 +77,7 @@ namespace Lista_de_Produtos
             catch (Exception ex)
             {
                 MessageBox.Show("Mensagem de Erro: " + ex.Message, "Mensagem de Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("query: " + genericSelectAllQuery + table, "Mensagem de Erro");
             }
             
 
@@ -87,6 +88,7 @@ namespace Lista_de_Produtos
         {
             String toReturn = "";
             String query = "SELECT " + column + " FROM " + table;
+            
             
             MySqlConnection con = new MySqlConnection(conectionData);
             con.Open();
@@ -104,8 +106,8 @@ namespace Lista_de_Produtos
 
             }catch(Exception ex)
             {
-                MessageBox.Show("Mensagem de Erro: " + ex.Message, "Mensagem de Erro",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Mensagem de Erro: " + ex.Message, "Mensagem de Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("query: " + query, "Mensagem de Erro");
             }
             finally
             {
@@ -118,7 +120,32 @@ namespace Lista_de_Produtos
         public static String readEntry(String column, String table, String condition)
         {
             String toReturn = "";
-            String query = "SELECT " + column + " FROM " + table + "WHERE" + condition;
+            String query = "SELECT " + column + " FROM " + table + " WHERE " + condition;
+
+            MySqlConnection con = new MySqlConnection(conectionData);
+            con.Open();
+
+            try
+            {
+                MySqlCommand command = new MySqlCommand(query, con);
+                var reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    toReturn += reader[0].ToString();
+                    toReturn += "§";
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Mensagem de Erro: " + ex.Message, "Mensagem de Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("query: " + query, "Mensagem de Erro");
+            }
+            finally
+            {
+                con.Close();
+            }
 
             return toReturn;
         }

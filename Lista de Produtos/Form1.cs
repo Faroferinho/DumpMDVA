@@ -13,46 +13,63 @@ namespace Lista_de_Produtos
     public partial class FrmShowProducts : Form
     {
         List<Product> products = new List<Product>();
+        int toAlter = 0;
+
         public FrmShowProducts()
         {
             InitializeComponent();
 
             String ids = DBConector.readEntry("Id_Product", "Products");
             List<String> auxIds = ids.Split('§').ToList();
-            
-            //MessageBox.Show("Texto: " + ids + "\n" + "Tamanho: " + auxIds.Count, "IDs");
-
-            for (int i = 0; i < auxIds.Count; i++)
+            for (int i = 0; i < auxIds.Count-1; i++)
             {
-                MessageBox.Show($"Indice: {i}\nTexto: {auxIds[i]}", "Ids");
                 if (auxIds[i] != null)
                 {
                     Product nPrd = new Product(auxIds[i]);
-
-                    if (auxIds[i] != null)
-                    {
-                        MessageBox.Show($"Id: {nPrd.getInfo(0)} \n" +
-                                $"  Nome: {nPrd.getInfo(1)} \n" +
-                                $"  Quantidade: {nPrd.getInfo(2)} \n" +
-                                $"  Valor: {nPrd.getInfo(3)} \n" +
-                                $"  Imagem: {nPrd.getPicture().ToString()} \n");
-                    }
                     
-
                     products.Add(nPrd);
+
+                    addButtonToForm(nPrd, i);
                 }
             }
-
-            for (int i = 0; i < products.Count; i++)
-            {
-                
-            }
-            
         }
+
+        private void addButtonToForm(Product prdct, int index)
+        {
+            Button bttnList = new Button()
+            {
+                Location = new Point(200 * index, 40),
+                Text = prdct.getInfo(1) + "\n" + prdct.getInfo(3),
+                Width = 120,
+                Height = 155,
+                BackColor = Color.Transparent,
+                ForeColor = Color.Black,
+               
+                Image = prdct.getPicture(),
+                
+            };
+
+            bttnList.Click += changePage;
+
+            flwLytPnlProducts.Controls.Add( bttnList );
+        }
+        
+        private void changePage(object sender, EventArgs e)
+        {
+            
+
+            MessageBox.Show("Se rolar eu vou gritar");
+        }
+
+
 
         private void lblTitle_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Os berros da cidade de Pandemonio serão ouvidos pelos quatro cantos da Terra");
+        }
+
+        private void FrmShowProducts_Resize(object sender, EventArgs e)
+        {
         }
     }
 }

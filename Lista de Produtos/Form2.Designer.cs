@@ -39,18 +39,19 @@
             this.label1.BackColor = System.Drawing.Color.LightCoral;
             this.label1.Font = new System.Drawing.Font("Yu Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(146, 9);
+            this.label1.Location = new System.Drawing.Point(151, 72);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 35);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FrmPandemoniumScream
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCoral;
-            this.ClientSize = new System.Drawing.Size(393, 190);
+            this.ClientSize = new System.Drawing.Size(404, 191);
             this.Controls.Add(this.label1);
             this.Name = "FrmPandemoniumScream";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

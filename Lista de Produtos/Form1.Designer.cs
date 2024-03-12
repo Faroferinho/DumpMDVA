@@ -65,6 +65,9 @@
             // 
             // grpBxBorder
             // 
+            this.grpBxBorder.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.grpBxBorder.BackColor = System.Drawing.Color.Transparent;
             this.grpBxBorder.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("grpBxBorder.BackgroundImage")));
             this.grpBxBorder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -86,6 +89,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(458, 648);
             this.Controls.Add(this.grpBxBorder);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmShowProducts";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

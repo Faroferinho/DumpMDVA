@@ -16,5 +16,15 @@ namespace Lista_de_Produtos
         {
             InitializeComponent();
         }
+
+        public static void Show(String text)
+        {
+
+        }
+
+        public static void Show(String text, String title)
+        {
+
+        }
     }
 }

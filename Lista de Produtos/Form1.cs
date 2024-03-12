@@ -13,7 +13,7 @@ namespace Lista_de_Produtos
     public partial class FrmShowProducts : Form
     {
         List<Product> products = new List<Product>();
-        int toAlter = 0;
+        int bttnIndex = 0;
 
         public FrmShowProducts()
         {
@@ -51,14 +51,12 @@ namespace Lista_de_Produtos
 
             bttnList.Click += changePage;
 
-            flwLytPnlProducts.Controls.Add( bttnList );
+            flwLytPnlProducts.Controls.Add(bttnList);
         }
         
         private void changePage(object sender, EventArgs e)
         {
-            
-
-            MessageBox.Show("Se rolar eu vou gritar");
+            MessageBox.Show($"Clicou no botão {((Button)(sender)).TabIndex}");
         }
 
 

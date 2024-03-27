@@ -1,5 +1,4 @@
-﻿using Lista_de_Produtos;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,6 +33,7 @@ namespace Beta_MdVA
         public void restartList()
         {
             String aux = DBConector.readEntry("Products");
+            
             if (aux != null)
             {
                 IDList = aux.Split('§').ToList();

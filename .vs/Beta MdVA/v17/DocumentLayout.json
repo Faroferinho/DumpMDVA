@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{5742A267-AA28-40E6-938E-B3FECF06DBF6}|Beta MdVA\\Beta MdVA.csproj|solutionrelative:beta mdva\\formmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5742A267-AA28-40E6-938E-B3FECF06DBF6}|Beta MdVA\\Beta MdVA.csproj|C:\\Users\\Tempustec\\source\\repos\\Beta MdVA\\beta mdva\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5742A267-AA28-40E6-938E-B3FECF06DBF6}|Beta MdVA\\Beta MdVA.csproj|solutionrelative:beta mdva\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5742A267-AA28-40E6-938E-B3FECF06DBF6}|Beta MdVA\\Beta MdVA.csproj|C:\\Users\\Tempustec\\source\\repos\\Beta MdVA\\beta mdva\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5742A267-AA28-40E6-938E-B3FECF06DBF6}|Beta MdVA\\Beta MdVA.csproj|solutionrelative:beta mdva\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,8 +19,12 @@
       "RelativeMoniker": "D:0:0:{5742A267-AA28-40E6-938E-B3FECF06DBF6}|Beta MdVA\\Beta MdVA.csproj|solutionrelative:beta mdva\\dbconector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5742A267-AA28-40E6-938E-B3FECF06DBF6}|Beta MdVA\\Beta MdVA.csproj|C:\\Users\\Tempustec\\source\\repos\\Beta MdVA\\beta mdva\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5742A267-AA28-40E6-938E-B3FECF06DBF6}|Beta MdVA\\Beta MdVA.csproj|solutionrelative:beta mdva\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5742A267-AA28-40E6-938E-B3FECF06DBF6}|Beta MdVA\\Beta MdVA.csproj|c:\\users\\tempustec\\source\\repos\\beta mdva\\beta mdva\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5742A267-AA28-40E6-938E-B3FECF06DBF6}|Beta MdVA\\Beta MdVA.csproj|solutionrelative:beta mdva\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5742A267-AA28-40E6-938E-B3FECF06DBF6}|Beta MdVA\\Beta MdVA.csproj|c:\\users\\tempustec\\source\\repos\\beta mdva\\beta mdva\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5742A267-AA28-40E6-938E-B3FECF06DBF6}|Beta MdVA\\Beta MdVA.csproj|solutionrelative:beta mdva\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5742A267-AA28-40E6-938E-B3FECF06DBF6}|Beta MdVA\\Beta MdVA.csproj|C:\\Users\\Tempustec\\source\\repos\\Beta MdVA\\beta mdva\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -30,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,19 +46,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Tempustec\\source\\repos\\Beta MdVA\\Beta MdVA\\Form1.cs",
+              "RelativeDocumentMoniker": "Beta MdVA\\Form1.cs",
+              "ToolTip": "C:\\Users\\Tempustec\\source\\repos\\Beta MdVA\\Beta MdVA\\Form1.cs",
+              "RelativeToolTip": "Beta MdVA\\Form1.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAowCMAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T17:28:18.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Tempustec\\source\\repos\\Beta MdVA\\Beta MdVA\\Form1.cs",
+              "RelativeDocumentMoniker": "Beta MdVA\\Form1.cs",
+              "ToolTip": "C:\\Users\\Tempustec\\source\\repos\\Beta MdVA\\Beta MdVA\\Form1.cs [Design]",
+              "RelativeToolTip": "Beta MdVA\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T17:27:57.927Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\Tempustec\\source\\repos\\Beta MdVA\\Beta MdVA\\Product.cs",
               "RelativeDocumentMoniker": "Beta MdVA\\Product.cs",
               "ToolTip": "C:\\Users\\Tempustec\\source\\repos\\Beta MdVA\\Beta MdVA\\Product.cs",
               "RelativeToolTip": "Beta MdVA\\Product.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAhAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T14:46:35.215Z"
+              "WhenOpened": "2024-03-27T14:46:35.215Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "DBConector.cs",
               "DocumentMoniker": "C:\\Users\\Tempustec\\source\\repos\\Beta MdVA\\Beta MdVA\\DBConector.cs",
               "RelativeDocumentMoniker": "Beta MdVA\\DBConector.cs",
@@ -58,7 +92,8 @@
               "RelativeToolTip": "Beta MdVA\\DBConector.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T14:24:53.341Z"
+              "WhenOpened": "2024-03-27T14:24:53.341Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -68,33 +103,35 @@
               "RelativeDocumentMoniker": "Beta MdVA\\FormManager.cs",
               "ToolTip": "C:\\Users\\Tempustec\\source\\repos\\Beta MdVA\\Beta MdVA\\FormManager.cs",
               "RelativeToolTip": "Beta MdVA\\FormManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA6AAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAUwAwAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-27T11:44:30.989Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form2.cs",
               "DocumentMoniker": "C:\\Users\\Tempustec\\source\\repos\\Beta MdVA\\Beta MdVA\\Form2.cs",
               "RelativeDocumentMoniker": "Beta MdVA\\Form2.cs",
               "ToolTip": "C:\\Users\\Tempustec\\source\\repos\\Beta MdVA\\Beta MdVA\\Form2.cs",
               "RelativeToolTip": "Beta MdVA\\Form2.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAA5AAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T13:08:07.868Z"
+              "WhenOpened": "2024-03-27T13:08:07.868Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Form2.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Tempustec\\source\\repos\\Beta MdVA\\Beta MdVA\\Form2.cs",
               "RelativeDocumentMoniker": "Beta MdVA\\Form2.cs",
               "ToolTip": "C:\\Users\\Tempustec\\source\\repos\\Beta MdVA\\Beta MdVA\\Form2.cs [Design]",
               "RelativeToolTip": "Beta MdVA\\Form2.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T12:49:15.399Z"
+              "WhenOpened": "2024-03-27T12:49:15.399Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

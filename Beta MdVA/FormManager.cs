@@ -10,7 +10,7 @@ namespace Beta_MdVA
 {
     internal class FormManager
     {
-        MapField<string, Product, int> cart = new MapField<Product, int>();
+        public Dictionary<String, object> shoppingCart = new Dictionary<String, Dictionary<Product, int>>();
 
         public static bool changeForm(int formIndex)
         {

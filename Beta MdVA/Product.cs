@@ -44,7 +44,6 @@ namespace Beta_MdVA
                     break;
                 case 4:
                     returnString = DBConector.readEntry("picture", "Products", $"ID_Product = \"{identificator}\"").Replace("§", "");
-
                     break;
                 default:
                     returnString = identificator;

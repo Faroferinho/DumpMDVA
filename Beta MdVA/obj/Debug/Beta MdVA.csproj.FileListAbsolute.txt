@@ -1,0 +1,43 @@
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\Beta MdVA.exe.config
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\Beta MdVA.exe
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\Beta MdVA.pdb
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\obj\Debug\Beta MdVA.csproj.AssemblyReference.cache
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\obj\Debug\Beta_MdVA.ConfirmAge.resources
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\obj\Debug\Beta_MdVA.Properties.Resources.resources
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\obj\Debug\Beta MdVA.csproj.GenerateResource.cache
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\obj\Debug\Beta MdVA.csproj.CoreCompileInputs.cache
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\obj\Debug\Beta MdVA.exe
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\obj\Debug\Beta MdVA.pdb
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\obj\Debug\Beta_MdVA.ProductList.resources
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\Google.Protobuf.dll
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\MySql.Data.dll
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\System.Buffers.dll
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\System.Memory.dll
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\ZstdSharp.dll
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\Google.Protobuf.pdb
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\Google.Protobuf.xml
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\MySql.Data.xml
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\System.Buffers.xml
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\System.Memory.xml
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\obj\Debug\Beta MdVA.csproj.Up2Date

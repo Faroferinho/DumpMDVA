@@ -10,7 +10,7 @@ namespace Beta_MdVA
 {
     internal class FormManager
     {
-        public Dictionary<String, object> shoppingCart = new Dictionary<String, Dictionary<Product, int>>();
+        public Dictionary<String, CartItem> shoppingCart = new Dictionary<string, CartItem> ();
 
         public static bool changeForm(int formIndex)
         {

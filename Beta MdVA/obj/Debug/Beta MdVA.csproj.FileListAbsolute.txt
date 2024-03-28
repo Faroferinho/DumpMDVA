@@ -41,3 +41,4 @@ C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\System.Numerics.Ve
 C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\obj\Debug\Beta MdVA.csproj.Up2Date
+C:\Users\Tempustec\source\repos\Beta MdVA\Beta MdVA\obj\Debug\Beta_MdVA.Cart.resources

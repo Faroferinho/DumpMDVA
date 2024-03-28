@@ -96,12 +96,13 @@
             // 
             // bttn_Check
             // 
+            this.bttn_Check.BackColor = System.Drawing.Color.Transparent;
             this.bttn_Check.Location = new System.Drawing.Point(158, 521);
             this.bttn_Check.Name = "bttn_Check";
             this.bttn_Check.Size = new System.Drawing.Size(196, 86);
             this.bttn_Check.TabIndex = 4;
             this.bttn_Check.Text = "Verificar";
-            this.bttn_Check.UseVisualStyleBackColor = true;
+            this.bttn_Check.UseVisualStyleBackColor = false;
             this.bttn_Check.Click += new System.EventHandler(this.bttn_Check_Click);
             // 
             // cmbBx_Year

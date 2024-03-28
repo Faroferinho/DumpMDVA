@@ -23,21 +23,55 @@ namespace Beta_MdVA
             lbl_Title.BackColor = Color.FromArgb(0, 0, 0, 0);
 
             restartList();
+            generateButtons();
 
-            for(int i = 0; i < IDList.Count; i++)
-            {
-                Product newProd = new Product(IDList[i]);
-            }
+
         }
 
         public void restartList()
         {
-            String aux = DBConector.readEntry("Products");
+            String aux = DBConector.readEntry("ID_Product", "Products");
             
-            if (aux != null)
+            if (aux != ("§"))
             {
                 IDList = aux.Split('§').ToList();
             }
+        }
+
+        public void generateButtons()
+        {
+            int auxX = 0;
+            int auxY = 0;
+
+            for (int i = 0; i < (IDList.Count - 1); i++)
+            {
+                if (auxX > 2)
+                {
+                    auxX = 0;
+                    auxY++;
+                }
+                Product newProd = new Product(IDList[i]);
+
+                Button createItem = new Button()
+                {
+                    Text = $"{newProd.getName()}\n{newProd.getValue()}",
+                    Location = new Point(5 + auxX * 160, 5 + auxY * 160),
+                    Size = new Size(155, 155),
+                    BackgroundImage = newProd.getPicture(),
+                    BackgroundImageLayout = ImageLayout.Stretch,
+                };
+
+                createItem.Click += CreateItem_Click;
+
+                pnl_Products.Controls.Add(createItem);
+
+                auxX++;
+            }
+        }
+
+        private void CreateItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(sender.ToString());
         }
     }
 }

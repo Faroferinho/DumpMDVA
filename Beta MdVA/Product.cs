@@ -21,59 +21,45 @@ namespace Beta_MdVA
         {
             identificator = Id;
 
-            name = defineValues(1);
-            quantity = int.Parse(defineValues(2));
-            value = decimal.Parse(defineValues(3));
-            picture = Image.FromFile(defineValues(4));
+            defineValues();
         }
 
-        private String defineValues(int columnIndex)
+        private void defineValues()
         {
-            String returnString = "";
+            String infoFormDB = DBConector.readEntry( "*", "Products", $"ID_Product = \'{identificator}\'" );
+            List<String> infoSorted = infoFormDB.Split('§').ToList();
 
-            switch (columnIndex)
-            {
-                case 1:
-                    returnString = DBConector.readEntry("name", "Products", $"ID_Product = \"{identificator}\"").Replace("§", "");
-                    break;
-                case 2:
-                    returnString = DBConector.readEntry("quantity", "Products", $"ID_Product = \"{identificator}\"").Replace("§", "");
-                    break;
-                case 3:
-                    returnString = DBConector.readEntry("value", "Products", $"ID_Product = \"{identificator}\"").Replace("§", "");
-                    break;
-                case 4:
-                    returnString = DBConector.readEntry("picture", "Products", $"ID_Product = \"{identificator}\"").Replace("§", "");
-                    break;
-                default:
-                    returnString = identificator;
-                    break;
-            }
-
-            return returnString;
+            name = infoSorted[1];
+            quantity = int.Parse(infoSorted[2]);
+            value = decimal.Parse(infoSorted[3]);
+            picture = Image.FromFile(infoSorted[4]);
         }
 
-        public String getInfo(int index)
+        public String getName()
         {
-            String infoRequested = "";
+            return name;
+        }
 
-            switch (index)
+        public int getQuantity()
+        {
+            return quantity;
+        }
+
+        public decimal getValue()
+        {
+            return getValue(1);
+        }
+
+        public decimal getValue(int quantity)
+        {
+            if (verifyStockAvailable(quantity))
             {
-                case 0:
-                    infoRequested = identificator;
-                    break;
-                case 1:
-                    infoRequested = name;
-                    break;
-                case 2:
-                    infoRequested = "" + quantity;
-                    break;
-                case 3:
-                    infoRequested = "" + value;
-                    break;
+                return (quantity * value);
             }
-
-            return infoRequested;
+            else
+            {
+                return 0;
+            }
         }
 
         public Image getPicture()
@@ -92,18 +78,6 @@ namespace Beta_MdVA
             }
 
             return true;
-        }
-
-        public decimal getValue(int quantity)
-        {
-            if (verifyStockAvailable(quantity))
-            {
-                return (quantity * value);
-            }
-            else
-            {
-                return 0;
-            }
         }
     }
 }

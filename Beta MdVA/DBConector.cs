@@ -132,8 +132,12 @@ namespace Beta_MdVA
 
                 while (reader.Read())
                 {
-                    toReturn += reader[0].ToString();
-                    toReturn += "§";
+                    for (int i = 0; i < reader.FieldCount; i++)
+                    {
+                        toReturn += reader[i].ToString();
+                        toReturn += "§";
+                    }
+                    toReturn += "\n";
                 }
 
             }

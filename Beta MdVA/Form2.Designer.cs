@@ -1,6 +1,6 @@
 ﻿namespace Beta_MdVA
 {
-    partial class ProductList
+    partial class Emporium
     {
         /// <summary>
         /// Required designer variable.
@@ -62,7 +62,7 @@
             this.lbl_Title.Text = "Lista de Produtos";
             this.lbl_Title.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // ProductList
+            // Emporium
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -70,7 +70,7 @@
             this.ClientSize = new System.Drawing.Size(536, 658);
             this.Controls.Add(this.pnl_MainBody);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "ProductList";
+            this.Name = "Emporium";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.pnl_MainBody.ResumeLayout(false);

@@ -15,7 +15,7 @@ namespace Beta_MdVA
         public static bool changeForm(int formIndex)
         {
             bool capableOfChangeForm = false;
-            Form product;
+            Form emporium;
 
             switch(formIndex)
             {
@@ -25,8 +25,8 @@ namespace Beta_MdVA
                     break;
                 case 1:
                     Application.OpenForms.Cast<Form>().FirstOrDefault(c => c is ConfirmAge).Hide();
-                    product = new ProductList();
-                    product.Show();
+                    emporium = new Emporium();
+                    emporium.Show();
                     capableOfChangeForm = true;
                     break;
                 case 2:

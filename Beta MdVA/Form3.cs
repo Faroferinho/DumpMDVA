@@ -17,6 +17,11 @@ namespace Beta_MdVA
             InitializeComponent();
 
             pnl_WorkSpace.BackColor = Color.FromArgb(50, 0, 0, 0);
+
+            foreach (KeyValuePair<String, CartItem> currentPair in FormManager.shoppingCart)
+            {
+                MessageBox.Show($"");
+            }
         }
     }
 }

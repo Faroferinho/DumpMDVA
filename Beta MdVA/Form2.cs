@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Beta_MdVA
 {
-    public partial class ProductList : Form
+    public partial class Emporium : Form
     {
         List<string> IDList = new List<string>();
 
-        public ProductList()
+        public Emporium()
         {
             InitializeComponent();
 

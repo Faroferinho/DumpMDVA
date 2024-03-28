@@ -30,11 +30,17 @@
         {
             this.pnl_WorkSpace = new System.Windows.Forms.Panel();
             this.lbl_Title = new System.Windows.Forms.Label();
+            this.pnl_CartList = new System.Windows.Forms.Panel();
+            this.bttn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.pnl_WorkSpace.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnl_WorkSpace
             // 
+            this.pnl_WorkSpace.Controls.Add(this.button1);
+            this.pnl_WorkSpace.Controls.Add(this.bttn);
+            this.pnl_WorkSpace.Controls.Add(this.pnl_CartList);
             this.pnl_WorkSpace.Controls.Add(this.lbl_Title);
             this.pnl_WorkSpace.Location = new System.Drawing.Point(12, 12);
             this.pnl_WorkSpace.Name = "pnl_WorkSpace";
@@ -45,12 +51,37 @@
             // 
             this.lbl_Title.AutoSize = true;
             this.lbl_Title.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Title.Location = new System.Drawing.Point(178, 0);
+            this.lbl_Title.Location = new System.Drawing.Point(184, 0);
             this.lbl_Title.Name = "lbl_Title";
             this.lbl_Title.Size = new System.Drawing.Size(128, 37);
             this.lbl_Title.TabIndex = 1;
             this.lbl_Title.Text = "Carrinho";
             this.lbl_Title.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pnl_CartList
+            // 
+            this.pnl_CartList.Location = new System.Drawing.Point(15, 40);
+            this.pnl_CartList.Name = "pnl_CartList";
+            this.pnl_CartList.Size = new System.Drawing.Size(468, 505);
+            this.pnl_CartList.TabIndex = 2;
+            // 
+            // bttn
+            // 
+            this.bttn.Location = new System.Drawing.Point(73, 551);
+            this.bttn.Name = "bttn";
+            this.bttn.Size = new System.Drawing.Size(98, 41);
+            this.bttn.TabIndex = 3;
+            this.bttn.Text = "Cancelar Compra";
+            this.bttn.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(313, 551);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(98, 41);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Finalizar Compra";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Cart
             // 
@@ -71,5 +102,8 @@
 
         private System.Windows.Forms.Panel pnl_WorkSpace;
         private System.Windows.Forms.Label lbl_Title;
+        private System.Windows.Forms.Panel pnl_CartList;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bttn;
     }
 }

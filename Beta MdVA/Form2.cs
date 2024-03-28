@@ -50,16 +50,24 @@ namespace Beta_MdVA
                     auxX = 0;
                     auxY++;
                 }
+
                 Product newProd = new Product(IDList[i]);
 
                 Button createItem = new Button()
                 {
                     Text = $"{newProd.getName()}\n{newProd.getValue()}",
                     Location = new Point(5 + auxX * 160, 5 + auxY * 160),
-                    Size = new Size(155, 155),
+                    Size = new Size(125, 125),
+                    BackColor = Color.Transparent,
                     BackgroundImage = newProd.getPicture(),
                     BackgroundImageLayout = ImageLayout.Stretch,
+                    Tag = newProd,
+                    FlatStyle = FlatStyle.Flat,
                 };
+
+                createItem.FlatAppearance.BorderSize = 0;
+                createItem.FlatAppearance.MouseOverBackColor = Color.Transparent;
+                createItem.FlatAppearance.MouseDownBackColor = Color.Transparent;
 
                 createItem.Click += CreateItem_Click;
 
@@ -71,7 +79,9 @@ namespace Beta_MdVA
 
         private void CreateItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(sender.ToString());
+            Product p = ((Product)((Control)sender).Tag);
+
+            FormManager.addToShoppingCart(p, 1);
         }
     }
 }

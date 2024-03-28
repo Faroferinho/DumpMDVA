@@ -35,6 +35,11 @@ namespace Beta_MdVA
             picture = Image.FromFile(infoSorted[4]);
         }
 
+        public String getID()
+        {
+            return identificator;
+        }
+
         public String getName()
         {
             return name;

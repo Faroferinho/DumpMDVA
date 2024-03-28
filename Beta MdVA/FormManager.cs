@@ -10,7 +10,7 @@ namespace Beta_MdVA
 {
     internal class FormManager
     {
-        public Dictionary<String, CartItem> shoppingCart = new Dictionary<string, CartItem> ();
+        public static Dictionary<String, CartItem> shoppingCart = new Dictionary<string, CartItem> ();
 
         public static bool changeForm(int formIndex)
         {
@@ -55,6 +55,40 @@ namespace Beta_MdVA
             {
                 formToShow = new ConfirmAge();
             }
+        }
+
+        public static bool addToShoppingCart(Product p, int q)
+        {
+            bool added = false;
+
+            CartItem toAdd = new CartItem(p, q);
+
+            if (!checkIfOnShoppingCart(p.getID()))
+            {
+                shoppingCart.Add(p.getID(), toAdd);
+            }
+            MessageBox.Show($"Carrinho:\n" +
+                            $"Quantidade de Itens: {shoppingCart.Count}");
+
+            return added;
+        }
+
+        public static bool checkIfOnShoppingCart(String newItemID)
+        {
+            bool toReturn = false;
+
+            foreach (KeyValuePair<String, CartItem> currElement in shoppingCart)
+            {
+                if (currElement.Key == newItemID)
+                {
+                    MessageBox.Show("Existe no ShoppingList");
+                    shoppingCart[newItemID].updateQuantity();
+                    toReturn = true;
+                    break;
+                }
+            }
+
+            return toReturn;
         }
     }
 }

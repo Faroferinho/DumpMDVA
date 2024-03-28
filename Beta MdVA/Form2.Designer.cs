@@ -48,7 +48,7 @@
             this.pnl_Products.AutoScroll = true;
             this.pnl_Products.Location = new System.Drawing.Point(12, 40);
             this.pnl_Products.Name = "pnl_Products";
-            this.pnl_Products.Size = new System.Drawing.Size(497, 577);
+            this.pnl_Products.Size = new System.Drawing.Size(486, 577);
             this.pnl_Products.TabIndex = 2;
             // 
             // lbl_Title

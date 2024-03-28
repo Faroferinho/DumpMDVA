@@ -97,6 +97,11 @@
             // bttn_Check
             // 
             this.bttn_Check.BackColor = System.Drawing.Color.Transparent;
+            this.bttn_Check.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.bttn_Check.FlatAppearance.BorderSize = 3;
+            this.bttn_Check.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Brown;
+            this.bttn_Check.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCoral;
+            this.bttn_Check.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttn_Check.Location = new System.Drawing.Point(158, 521);
             this.bttn_Check.Name = "bttn_Check";
             this.bttn_Check.Size = new System.Drawing.Size(196, 86);

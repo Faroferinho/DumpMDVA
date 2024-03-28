@@ -71,6 +71,15 @@ namespace Beta_MdVA
             return toReturn;
         }
 
+        public bool updateQuantity()
+        {
+            bool toReturn = false;
+
+            quantity++;
+
+            return toReturn;
+        }
+
         public bool updateQuantity(int newQuantity)
         {
             bool toReturn = false;

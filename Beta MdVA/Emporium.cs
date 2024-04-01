@@ -61,6 +61,7 @@ namespace Beta_MdVA
                     BackColor = Color.Transparent,
                     BackgroundImage = newProd.getPicture(),
                     BackgroundImageLayout = ImageLayout.Stretch,
+                    ForeColor = Color.Yellow,
                     Tag = newProd,
                     FlatStyle = FlatStyle.Flat,
                 };

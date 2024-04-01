@@ -86,3 +86,4 @@ C:\Users\User\Source\Repos\DumpMDVA\Beta MdVA\obj\Debug\Beta MdVA.csproj.CoreCom
 C:\Users\User\Source\Repos\DumpMDVA\Beta MdVA\obj\Debug\Beta MdVA.csproj.Up2Date
 C:\Users\User\Source\Repos\DumpMDVA\Beta MdVA\obj\Debug\Beta MdVA.exe
 C:\Users\User\Source\Repos\DumpMDVA\Beta MdVA\obj\Debug\Beta MdVA.pdb
+C:\Users\User\source\repos\DumpMDVA\Beta MdVA\obj\Debug\Beta_MdVA.ConfirmPurchase.resources

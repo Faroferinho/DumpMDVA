@@ -119,11 +119,20 @@
     <Compile Include="ConfirmAge.Designer.cs">
       <DependentUpon>ConfirmAge.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConfirmPurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmPurchase.Designer.cs">
+      <DependentUpon>ConfirmPurchase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ConfirmAge.resx">
       <DependentUpon>ConfirmAge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmPurchase.resx">
+      <DependentUpon>ConfirmPurchase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Emporium.resx">
       <DependentUpon>Emporium.cs</DependentUpon>

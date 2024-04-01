@@ -24,11 +24,28 @@ namespace Beta_MdVA
             }
         }
 
-        private void createItem()
+        private void createItem(KeyValuePair<String, CartItem> pair)
         {
             Panel body = new Panel()
             {
-                
+                Location = new Point(18, 18),
+                Size = new Size(450, 130)
+            };
+
+            PictureBox image = new PictureBox()
+            {
+                Image = pair.Value.getProduct().getPicture(),
+                Size = new Size(115, 115),
+            };
+
+            Label productName = new Label()
+            {
+                Text = pair.Value.getProduct().getName(),
+            };
+
+            NumericUpDown quantity = new NumericUpDown()
+            {
+
             };
         }
 

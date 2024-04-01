@@ -34,7 +34,17 @@
             this.bttn_Cancel = new System.Windows.Forms.Button();
             this.pnl_CartList = new System.Windows.Forms.Panel();
             this.lbl_Title = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.bttn_Add = new System.Windows.Forms.Button();
+            this.bttn_Delete = new System.Windows.Forms.Button();
             this.pnl_WorkSpace.SuspendLayout();
+            this.pnl_CartList.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_WorkSpace
@@ -80,6 +90,7 @@
             // 
             // pnl_CartList
             // 
+            this.pnl_CartList.Controls.Add(this.panel1);
             this.pnl_CartList.Location = new System.Drawing.Point(15, 40);
             this.pnl_CartList.Name = "pnl_CartList";
             this.pnl_CartList.Size = new System.Drawing.Size(482, 544);
@@ -96,6 +107,67 @@
             this.lbl_Title.Text = "Carrinho";
             this.lbl_Title.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.bttn_Delete);
+            this.panel1.Controls.Add(this.bttn_Add);
+            this.panel1.Controls.Add(this.numericUpDown1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Location = new System.Drawing.Point(18, 18);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(450, 130);
+            this.panel1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(8, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(115, 115);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(270, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 21);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "label1";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.numericUpDown1.Font = new System.Drawing.Font("Nirmala UI", 12F);
+            this.numericUpDown1.Location = new System.Drawing.Point(257, 70);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(86, 25);
+            this.numericUpDown1.TabIndex = 2;
+            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown1.ThousandsSeparator = true;
+            // 
+            // bttn_Add
+            // 
+            this.bttn_Add.Font = new System.Drawing.Font("Nirmala UI", 12F);
+            this.bttn_Add.Location = new System.Drawing.Point(362, 65);
+            this.bttn_Add.Name = "bttn_Add";
+            this.bttn_Add.Size = new System.Drawing.Size(30, 30);
+            this.bttn_Add.TabIndex = 3;
+            this.bttn_Add.Text = "+";
+            this.bttn_Add.UseVisualStyleBackColor = true;
+            // 
+            // bttn_Delete
+            // 
+            this.bttn_Delete.Font = new System.Drawing.Font("Nirmala UI", 12F);
+            this.bttn_Delete.Location = new System.Drawing.Point(212, 65);
+            this.bttn_Delete.Name = "bttn_Delete";
+            this.bttn_Delete.Size = new System.Drawing.Size(30, 30);
+            this.bttn_Delete.TabIndex = 4;
+            this.bttn_Delete.Text = "-";
+            this.bttn_Delete.UseVisualStyleBackColor = true;
+            // 
             // Cart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -109,6 +181,11 @@
             this.Text = "Form3";
             this.pnl_WorkSpace.ResumeLayout(false);
             this.pnl_WorkSpace.PerformLayout();
+            this.pnl_CartList.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -121,5 +198,11 @@
         private System.Windows.Forms.Button bttn_Purchase;
         private System.Windows.Forms.Button bttn_Cancel;
         private System.Windows.Forms.Button bttn_AddItem;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Button bttn_Delete;
+        private System.Windows.Forms.Button bttn_Add;
     }
 }

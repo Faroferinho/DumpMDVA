@@ -70,27 +70,30 @@
             // lbl_Year
             // 
             this.lbl_Year.AutoSize = true;
-            this.lbl_Year.Location = new System.Drawing.Point(442, 148);
+            this.lbl_Year.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Year.Location = new System.Drawing.Point(433, 144);
             this.lbl_Year.Name = "lbl_Year";
-            this.lbl_Year.Size = new System.Drawing.Size(26, 13);
+            this.lbl_Year.Size = new System.Drawing.Size(31, 17);
             this.lbl_Year.TabIndex = 7;
             this.lbl_Year.Text = "Ano";
             // 
             // lbl_Month
             // 
             this.lbl_Month.AutoSize = true;
-            this.lbl_Month.Location = new System.Drawing.Point(253, 148);
+            this.lbl_Month.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Month.Location = new System.Drawing.Point(244, 144);
             this.lbl_Month.Name = "lbl_Month";
-            this.lbl_Month.Size = new System.Drawing.Size(27, 13);
+            this.lbl_Month.Size = new System.Drawing.Size(33, 17);
             this.lbl_Month.TabIndex = 6;
             this.lbl_Month.Text = "Mês";
             // 
             // lbl_Day
             // 
             this.lbl_Day.AutoSize = true;
-            this.lbl_Day.Location = new System.Drawing.Point(48, 148);
+            this.lbl_Day.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Day.Location = new System.Drawing.Point(39, 144);
             this.lbl_Day.Name = "lbl_Day";
-            this.lbl_Day.Size = new System.Drawing.Size(23, 13);
+            this.lbl_Day.Size = new System.Drawing.Size(27, 17);
             this.lbl_Day.TabIndex = 5;
             this.lbl_Day.Text = "Dia";
             // 

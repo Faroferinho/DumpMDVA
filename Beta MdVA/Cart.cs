@@ -42,6 +42,7 @@ namespace Beta_MdVA
                 Image = pair.Value.getProduct().getPicture(),
                 Size = new Size(115, 115),
                 Location = new Point(8, 8),
+                SizeMode = PictureBoxSizeMode.StretchImage,
             };
 
             Label productName = new Label()
@@ -92,8 +93,6 @@ namespace Beta_MdVA
             Control c = ((Control) sender);
 
             Conductor.shoppingCart[$"{c.Tag}"].updateQuantity();
-
-            c.Parent.GetChildAtPoint(new Point(230, 75));
         }
 
         private void decrementQuantity(object sender, EventArgs e)
@@ -103,6 +102,7 @@ namespace Beta_MdVA
 
         private void bttn_Cancel_Click(object sender, EventArgs e)
         {
+            Conductor.shoppingCart = new Dictionary<string, CartItem>();
             Conductor.changeForm(0);
         }
 

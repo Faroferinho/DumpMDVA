@@ -156,7 +156,7 @@ namespace Beta_MdVA
 
             if (verifyAge(userBirth))
             {
-                FormManager.changeForm(1);
+                Conductor.changeForm(1);
             }
 
         }

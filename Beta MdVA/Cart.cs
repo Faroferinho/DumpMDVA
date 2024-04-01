@@ -18,10 +18,29 @@ namespace Beta_MdVA
 
             pnl_WorkSpace.BackColor = Color.FromArgb(50, 0, 0, 0);
 
-            foreach (KeyValuePair<String, CartItem> currentPair in FormManager.shoppingCart)
+            foreach (KeyValuePair<String, CartItem> currentPair in Conductor.shoppingCart)
             {
-                MessageBox.Show($"");
+                
             }
+        }
+
+        private void createItem()
+        {
+            Panel body = new Panel()
+            {
+                
+            };
+        }
+
+        private void bttn_Cancel_Click(object sender, EventArgs e)
+        {
+            Conductor.changeForm(0);
+        }
+
+        private void bttn_AddItem_Click(object sender, EventArgs e)
+        {
+            Cart.ActiveForm.Hide();
+            Conductor.changeForm(1);
         }
     }
 }

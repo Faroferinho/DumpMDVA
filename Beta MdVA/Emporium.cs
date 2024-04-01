@@ -56,7 +56,7 @@ namespace Beta_MdVA
                 Button createItem = new Button()
                 {
                     Text = $"{newProd.getName()}\n{newProd.getValue()}",
-                    Location = new Point(5 + auxX * 160, 5 + auxY * 160),
+                    Location = new Point(23 + auxX * 160, 5 + auxY * 160),
                     Size = new Size(125, 125),
                     BackColor = Color.Transparent,
                     BackgroundImage = newProd.getPicture(),
@@ -81,7 +81,14 @@ namespace Beta_MdVA
         {
             Product p = ((Product)((Control)sender).Tag);
 
-            FormManager.addToShoppingCart(p, 1);
+            Conductor.addToShoppingCart(p, 1);
+
+            Conductor.changeForm(2);
+        }
+
+        private void Emporium_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

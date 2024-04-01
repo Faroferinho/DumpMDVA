@@ -11,13 +11,13 @@ namespace Beta_MdVA
     
     internal class DBConector
     {
-        private static String database = "MDVA_Trades";
-        private static String user = "root";
-        private static String password = "1234";
-        private static String conectionData = "server=localhost;uid=" + user + ";pwd=" + password + ";database=" + database;
+        private readonly static String database = "MDVA_Trades";
+        private readonly static String user = "root";
+        private readonly static String password = "1234";
+        private readonly static String conectionData = "server=localhost;uid=" + user + ";pwd=" + password + ";database=" + database;
 
-        private static String genericSelectAllQuery = "SELECT * FROM ";
-        private static String genericDeleteCommand = "DELETE FROM ";
+        private readonly static String genericSelectAllQuery = "SELECT * FROM ";
+        private readonly static String genericDeleteCommand = "DELETE FROM ";
 
         static DBConector()
         {

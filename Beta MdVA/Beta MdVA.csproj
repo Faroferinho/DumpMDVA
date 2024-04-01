@@ -112,7 +112,7 @@
     <Compile Include="Cart.Designer.cs">
       <DependentUpon>Cart.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormManager.cs" />
+    <Compile Include="Conductor.cs" />
     <Compile Include="ConfirmAge.cs">
       <SubType>Form</SubType>
     </Compile>

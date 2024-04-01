@@ -8,28 +8,52 @@ using System.Windows.Forms;
 
 namespace Beta_MdVA
 {
-    internal class FormManager
+    internal class Conductor
     {
         public static Dictionary<String, CartItem> shoppingCart = new Dictionary<string, CartItem> ();
 
         public static bool changeForm(int formIndex)
         {
             bool capableOfChangeForm = false;
-            Form emporium;
+            Form emporium = null;
+            Form cart = null;
 
             switch(formIndex)
             {
                 case 0:
+                    Application.OpenForms.Cast<Form>().FirstOrDefault(f => f is Cart).Hide();
                     showConfirmAgeForm();
                     capableOfChangeForm = true;
                     break;
                 case 1:
-                    Application.OpenForms.Cast<Form>().FirstOrDefault(c => c is ConfirmAge).Hide();
-                    emporium = new Emporium();
-                    emporium.Show();
+                    Application.OpenForms.Cast<Form>().FirstOrDefault(f => f is ConfirmAge).Hide();
+                    if (cart != null)
+                    {
+                        Application.OpenForms.Cast<Form>().FirstOrDefault(c => c is Cart).Hide();
+                    }
+
+                    if (emporium == null)
+                    {
+                        emporium = new Emporium();
+                        emporium.Show();
+                    }
+                    else
+                    {
+                        emporium.Show();
+                    }
                     capableOfChangeForm = true;
                     break;
                 case 2:
+                    Application.OpenForms.Cast<Form>().FirstOrDefault(c => c is Emporium).Close();
+                    if (cart == null)
+                    {
+                        cart = new Cart();
+                        cart.Show();
+                    }
+                    else
+                    {
+                        cart.Show();
+                    }
                     capableOfChangeForm = true;
                     break;
                 case 3:
@@ -46,6 +70,7 @@ namespace Beta_MdVA
         public static void showConfirmAgeForm()
         {
             Form formToShow = Application.OpenForms.Cast<Form>().FirstOrDefault(c => c is ConfirmAge);
+
 
             if (formToShow != null)
             {
@@ -67,8 +92,8 @@ namespace Beta_MdVA
             {
                 shoppingCart.Add(p.getID(), toAdd);
             }
-            MessageBox.Show($"Carrinho:\n" +
-                            $"Quantidade de Itens: {shoppingCart.Count}");
+            /*MessageBox.Show($"Carrinho:\n" +
+                            $"Quantidade de Itens: {shoppingCart.Count}");*/
 
             return added;
         }

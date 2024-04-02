@@ -16,12 +16,6 @@ namespace Beta_MdVA
         {
             InitializeComponent();
 
-            pnl_Body.BackColor = Color.FromArgb(50,0,0,0);
-            lbl_Title.BackColor = Color.Transparent;
-            lbl_Day.BackColor = Color.Transparent;
-            lbl_Month.BackColor = Color.Transparent;
-            lbl_Year.BackColor = Color.Transparent;
-            
             cmbBx_Day.Items.AddRange(fillInfo(0));
             cmbBx_Month.Items.AddRange(fillInfo(1));
             cmbBx_Year.Items.AddRange(fillInfo(2));
@@ -82,7 +76,6 @@ namespace Beta_MdVA
 
         private void checkUserData()
         {
-
             DateTime userBirth;
             String birthdate = "";
 

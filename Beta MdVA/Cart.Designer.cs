@@ -39,19 +39,27 @@
             // 
             // pnl_WorkSpace
             // 
+            this.pnl_WorkSpace.BackColor = System.Drawing.Color.Transparent;
+            this.pnl_WorkSpace.BackgroundImage = global::Beta_MdVA.Properties.Resources.Border;
+            this.pnl_WorkSpace.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pnl_WorkSpace.Controls.Add(this.bttn_AddItem);
             this.pnl_WorkSpace.Controls.Add(this.bttn_Purchase);
             this.pnl_WorkSpace.Controls.Add(this.bttn_Cancel);
             this.pnl_WorkSpace.Controls.Add(this.pnl_CartList);
             this.pnl_WorkSpace.Controls.Add(this.lbl_Title);
+            this.pnl_WorkSpace.ForeColor = System.Drawing.Color.White;
             this.pnl_WorkSpace.Location = new System.Drawing.Point(12, 12);
             this.pnl_WorkSpace.Name = "pnl_WorkSpace";
-            this.pnl_WorkSpace.Size = new System.Drawing.Size(512, 634);
+            this.pnl_WorkSpace.Size = new System.Drawing.Size(512, 730);
             this.pnl_WorkSpace.TabIndex = 0;
             // 
             // bttn_AddItem
             // 
-            this.bttn_AddItem.Location = new System.Drawing.Point(204, 590);
+            this.bttn_AddItem.BackgroundImage = global::Beta_MdVA.Properties.Resources.Botão_Vermelho_Teste;
+            this.bttn_AddItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bttn_AddItem.FlatAppearance.BorderSize = 0;
+            this.bttn_AddItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttn_AddItem.Location = new System.Drawing.Point(202, 686);
             this.bttn_AddItem.Name = "bttn_AddItem";
             this.bttn_AddItem.Size = new System.Drawing.Size(98, 41);
             this.bttn_AddItem.TabIndex = 5;
@@ -61,7 +69,11 @@
             // 
             // bttn_Purchase
             // 
-            this.bttn_Purchase.Location = new System.Drawing.Point(387, 590);
+            this.bttn_Purchase.BackgroundImage = global::Beta_MdVA.Properties.Resources.Botão_Vermelho_Teste;
+            this.bttn_Purchase.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bttn_Purchase.FlatAppearance.BorderSize = 0;
+            this.bttn_Purchase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttn_Purchase.Location = new System.Drawing.Point(385, 686);
             this.bttn_Purchase.Name = "bttn_Purchase";
             this.bttn_Purchase.Size = new System.Drawing.Size(98, 41);
             this.bttn_Purchase.TabIndex = 4;
@@ -71,7 +83,13 @@
             // 
             // bttn_Cancel
             // 
-            this.bttn_Cancel.Location = new System.Drawing.Point(31, 590);
+            this.bttn_Cancel.BackgroundImage = global::Beta_MdVA.Properties.Resources.Botão_Vermelho_Teste;
+            this.bttn_Cancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bttn_Cancel.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bttn_Cancel.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bttn_Cancel.FlatAppearance.BorderSize = 0;
+            this.bttn_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttn_Cancel.Location = new System.Drawing.Point(29, 686);
             this.bttn_Cancel.Name = "bttn_Cancel";
             this.bttn_Cancel.Size = new System.Drawing.Size(98, 41);
             this.bttn_Cancel.TabIndex = 3;
@@ -81,16 +99,16 @@
             // 
             // pnl_CartList
             // 
-            this.pnl_CartList.Location = new System.Drawing.Point(15, 40);
+            this.pnl_CartList.Location = new System.Drawing.Point(15, 76);
             this.pnl_CartList.Name = "pnl_CartList";
-            this.pnl_CartList.Size = new System.Drawing.Size(482, 544);
+            this.pnl_CartList.Size = new System.Drawing.Size(482, 604);
             this.pnl_CartList.TabIndex = 2;
             // 
             // lbl_Title
             // 
             this.lbl_Title.AutoSize = true;
             this.lbl_Title.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Title.Location = new System.Drawing.Point(197, 0);
+            this.lbl_Title.Location = new System.Drawing.Point(195, 14);
             this.lbl_Title.Name = "lbl_Title";
             this.lbl_Title.Size = new System.Drawing.Size(128, 37);
             this.lbl_Title.TabIndex = 1;
@@ -102,7 +120,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
-            this.ClientSize = new System.Drawing.Size(536, 658);
+            this.BackgroundImage = global::Beta_MdVA.Properties.Resources.Background;
+            this.ClientSize = new System.Drawing.Size(533, 754);
             this.Controls.Add(this.pnl_WorkSpace);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Cart";

@@ -18,10 +18,6 @@ namespace Beta_MdVA
         {
             InitializeComponent();
 
-            pnl_MainBody.BackColor = Color.FromArgb(50, 0, 0, 0);
-            pnl_Products.BackColor = Color.FromArgb(50, 0, 0, 0);
-            lbl_Title.BackColor = Color.FromArgb(0, 0, 0, 0);
-
             restartList();
             generateButtons();
 

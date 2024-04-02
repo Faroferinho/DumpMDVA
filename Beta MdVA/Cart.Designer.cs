@@ -67,6 +67,7 @@
             this.bttn_Purchase.TabIndex = 4;
             this.bttn_Purchase.Text = "Finalizar Compra";
             this.bttn_Purchase.UseVisualStyleBackColor = true;
+            this.bttn_Purchase.Click += new System.EventHandler(this.bttn_Purchase_Click);
             // 
             // bttn_Cancel
             // 

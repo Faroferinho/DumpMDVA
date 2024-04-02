@@ -75,12 +75,24 @@ namespace Beta_MdVA
         {
             bool toReturn = false;
 
-            quantity++;
+            if (product.getQuantity() > (quantity))
+            {
+                quantity++;
+            }
+
+            return toReturn;
+        }
+        public bool updateQuantity(int incrementable)
+        {
+            bool toReturn = false;
+
+            if(product.getQuantity() > (quantity + incrementable) && (quantity + incrementable) > 0)
+            quantity += incrementable;
 
             return toReturn;
         }
 
-        public bool updateQuantity(int newQuantity)
+        public bool setQuantity(int newQuantity)
         {
             bool toReturn = false;
 

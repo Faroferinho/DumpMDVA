@@ -112,7 +112,6 @@ namespace Beta_MdVA
                     break;
                 }
             }
-
             return toReturn;
         }
     }

@@ -18,6 +18,7 @@ namespace Beta_MdVA
         {
             InitializeComponent();
 
+            lbl_Title.BackColor = Color.Transparent;
             pnl_WorkSpace.BackColor = Color.FromArgb(50, 0, 0, 0);
 
             foreach (KeyValuePair<String, CartItem> currentPair in Conductor.shoppingCart)
@@ -43,12 +44,14 @@ namespace Beta_MdVA
                 Size = new Size(115, 115),
                 Location = new Point(8, 8),
                 SizeMode = PictureBoxSizeMode.StretchImage,
+                BackColor = Color.Transparent,
             };
 
             Label productName = new Label()
             {
                 Text = $"{pair.Value.getProduct().getName()}",
                 Location = new Point(131 + (319 / 2), 30),
+                BackColor = Color.Transparent,
             };
 
             NumericUpDown quantity = new NumericUpDown()
@@ -57,6 +60,7 @@ namespace Beta_MdVA
                 TextAlign = HorizontalAlignment.Center,
                 Size = new Size(80, 70),
                 Value = pair.Value.getQuantity(),
+                Tag = pair.Key,
             };
 
             Button bttnAdd = new Button()
@@ -65,6 +69,7 @@ namespace Beta_MdVA
                 Text = "+",
                 Size = new Size(30, 30),
                 Tag = pair.Key,
+                BackColor = Color.Transparent,
             };
 
             Button bttnTake = new Button()
@@ -72,6 +77,8 @@ namespace Beta_MdVA
                 Location = new Point(184, 70),
                 Text = "-",
                 Size = new Size(30, 30),
+                Tag = pair.Key,
+                BackColor = Color.Transparent,
             };
 
             productName.Location = new Point(131 + (299 / 2) - (productName.Width / 2), 30);
@@ -90,14 +97,69 @@ namespace Beta_MdVA
 
         private void incrementQuantity(object sender, EventArgs e)
         {
-            Control c = ((Control) sender);
+            Control localControl = ((Control) sender);
 
-            Conductor.shoppingCart[$"{c.Tag}"].updateQuantity();
+            Conductor.shoppingCart[$"{localControl.Tag}"].updateQuantity();
+
+            foreach (Control controlFromForm in this.Controls) 
+            {
+                if(controlFromForm is Panel)
+                {
+                    foreach (Control controlFromPanel in controlFromForm.Controls)
+                    {
+                        if (controlFromPanel is Panel)
+                        {
+                            foreach(Control controlFromSecondPanel in controlFromPanel.Controls)
+                            {
+                                if (controlFromSecondPanel is Panel)
+                                {
+                                    foreach(Control controlFromBody in controlFromSecondPanel.Controls)
+                                    {
+                                        if(controlFromBody is NumericUpDown && controlFromBody.Tag == localControl.Tag)
+                                        {
+                                            ((NumericUpDown)controlFromBody).Value = Conductor.shoppingCart[$"{localControl.Tag}"].getQuantity();
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         private void decrementQuantity(object sender, EventArgs e)
         {
+            Control localControl = ((Control)sender);
 
+            Conductor.shoppingCart[$"{localControl.Tag}"].updateQuantity(-1);
+
+            foreach (Control controlFromForm in this.Controls)
+            {
+                if (controlFromForm is Panel)
+                {
+                    foreach (Control controlFromPanel in controlFromForm.Controls)
+                    {
+                        if (controlFromPanel is Panel)
+                        {
+                            foreach (Control controlFromSecondPanel in controlFromPanel.Controls)
+                            {
+                                if (controlFromSecondPanel is Panel)
+                                {
+                                    foreach (Control controlFromBody in controlFromSecondPanel.Controls)
+                                    {
+                                        if (controlFromBody is NumericUpDown)
+                                        {
+                                            ((NumericUpDown)controlFromBody).Value = Conductor.shoppingCart[$"{localControl.Tag}"].getQuantity();
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         private void bttn_Cancel_Click(object sender, EventArgs e)
@@ -110,6 +172,11 @@ namespace Beta_MdVA
         {
             Cart.ActiveForm.Hide();
             Conductor.changeForm(1);
+        }
+
+        private void bttn_Purchase_Click(object sender, EventArgs e)
+        {
+            Conductor.changeForm(3);
         }
     }
 }

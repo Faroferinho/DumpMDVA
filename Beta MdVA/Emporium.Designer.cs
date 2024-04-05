@@ -29,9 +29,11 @@
         private void InitializeComponent()
         {
             this.pnl_MainBody = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnl_Products = new System.Windows.Forms.Panel();
             this.lbl_Title = new System.Windows.Forms.Label();
             this.pnl_MainBody.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_MainBody
@@ -39,6 +41,7 @@
             this.pnl_MainBody.BackColor = System.Drawing.Color.Transparent;
             this.pnl_MainBody.BackgroundImage = global::Beta_MdVA.Properties.Resources.Border;
             this.pnl_MainBody.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnl_MainBody.Controls.Add(this.pictureBox1);
             this.pnl_MainBody.Controls.Add(this.pnl_Products);
             this.pnl_MainBody.Controls.Add(this.lbl_Title);
             this.pnl_MainBody.ForeColor = System.Drawing.Color.White;
@@ -47,13 +50,23 @@
             this.pnl_MainBody.Size = new System.Drawing.Size(512, 730);
             this.pnl_MainBody.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Beta_MdVA.Properties.Resources.Bipartition_Line;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(26, 61);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(462, 21);
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
             // pnl_Products
             // 
             this.pnl_Products.AutoScroll = true;
             this.pnl_Products.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnl_Products.Location = new System.Drawing.Point(12, 61);
+            this.pnl_Products.Location = new System.Drawing.Point(12, 88);
             this.pnl_Products.Name = "pnl_Products";
-            this.pnl_Products.Size = new System.Drawing.Size(486, 645);
+            this.pnl_Products.Size = new System.Drawing.Size(486, 618);
             this.pnl_Products.TabIndex = 2;
             // 
             // lbl_Title
@@ -82,6 +95,7 @@
             this.Text = "Form2";
             this.pnl_MainBody.ResumeLayout(false);
             this.pnl_MainBody.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -91,5 +105,6 @@
         private System.Windows.Forms.Panel pnl_MainBody;
         private System.Windows.Forms.Label lbl_Title;
         private System.Windows.Forms.Panel pnl_Products;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

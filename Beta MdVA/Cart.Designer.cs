@@ -29,12 +29,14 @@
         private void InitializeComponent()
         {
             this.pnl_WorkSpace = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bttn_AddItem = new System.Windows.Forms.Button();
             this.bttn_Purchase = new System.Windows.Forms.Button();
             this.bttn_Cancel = new System.Windows.Forms.Button();
             this.pnl_CartList = new System.Windows.Forms.Panel();
             this.lbl_Title = new System.Windows.Forms.Label();
             this.pnl_WorkSpace.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_WorkSpace
@@ -42,6 +44,7 @@
             this.pnl_WorkSpace.BackColor = System.Drawing.Color.Transparent;
             this.pnl_WorkSpace.BackgroundImage = global::Beta_MdVA.Properties.Resources.Border;
             this.pnl_WorkSpace.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnl_WorkSpace.Controls.Add(this.pictureBox1);
             this.pnl_WorkSpace.Controls.Add(this.bttn_AddItem);
             this.pnl_WorkSpace.Controls.Add(this.bttn_Purchase);
             this.pnl_WorkSpace.Controls.Add(this.bttn_Cancel);
@@ -53,13 +56,25 @@
             this.pnl_WorkSpace.Size = new System.Drawing.Size(512, 730);
             this.pnl_WorkSpace.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Beta_MdVA.Properties.Resources.Bipartition_Line;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(26, 54);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(462, 21);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
             // bttn_AddItem
             // 
             this.bttn_AddItem.BackgroundImage = global::Beta_MdVA.Properties.Resources.Botão_Vermelho_Teste;
             this.bttn_AddItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bttn_AddItem.FlatAppearance.BorderSize = 0;
+            this.bttn_AddItem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.bttn_AddItem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bttn_AddItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttn_AddItem.Location = new System.Drawing.Point(202, 686);
+            this.bttn_AddItem.Location = new System.Drawing.Point(212, 686);
             this.bttn_AddItem.Name = "bttn_AddItem";
             this.bttn_AddItem.Size = new System.Drawing.Size(98, 41);
             this.bttn_AddItem.TabIndex = 5;
@@ -72,8 +87,10 @@
             this.bttn_Purchase.BackgroundImage = global::Beta_MdVA.Properties.Resources.Botão_Vermelho_Teste;
             this.bttn_Purchase.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bttn_Purchase.FlatAppearance.BorderSize = 0;
+            this.bttn_Purchase.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.bttn_Purchase.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bttn_Purchase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttn_Purchase.Location = new System.Drawing.Point(385, 686);
+            this.bttn_Purchase.Location = new System.Drawing.Point(349, 686);
             this.bttn_Purchase.Name = "bttn_Purchase";
             this.bttn_Purchase.Size = new System.Drawing.Size(98, 41);
             this.bttn_Purchase.TabIndex = 4;
@@ -88,8 +105,10 @@
             this.bttn_Cancel.Cursor = System.Windows.Forms.Cursors.Default;
             this.bttn_Cancel.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.bttn_Cancel.FlatAppearance.BorderSize = 0;
+            this.bttn_Cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.bttn_Cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bttn_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttn_Cancel.Location = new System.Drawing.Point(29, 686);
+            this.bttn_Cancel.Location = new System.Drawing.Point(73, 686);
             this.bttn_Cancel.Name = "bttn_Cancel";
             this.bttn_Cancel.Size = new System.Drawing.Size(98, 41);
             this.bttn_Cancel.TabIndex = 3;
@@ -99,9 +118,9 @@
             // 
             // pnl_CartList
             // 
-            this.pnl_CartList.Location = new System.Drawing.Point(15, 76);
+            this.pnl_CartList.Location = new System.Drawing.Point(15, 74);
             this.pnl_CartList.Name = "pnl_CartList";
-            this.pnl_CartList.Size = new System.Drawing.Size(482, 604);
+            this.pnl_CartList.Size = new System.Drawing.Size(482, 606);
             this.pnl_CartList.TabIndex = 2;
             // 
             // lbl_Title
@@ -121,6 +140,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
             this.BackgroundImage = global::Beta_MdVA.Properties.Resources.Background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(533, 754);
             this.Controls.Add(this.pnl_WorkSpace);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -129,6 +149,7 @@
             this.Text = "Form3";
             this.pnl_WorkSpace.ResumeLayout(false);
             this.pnl_WorkSpace.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -141,5 +162,6 @@
         private System.Windows.Forms.Button bttn_Purchase;
         private System.Windows.Forms.Button bttn_Cancel;
         private System.Windows.Forms.Button bttn_AddItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

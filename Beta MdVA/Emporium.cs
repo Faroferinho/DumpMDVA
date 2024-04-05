@@ -12,34 +12,38 @@ namespace Beta_MdVA
 {
     public partial class Emporium : Form
     {
-        List<string> IDList = new List<string>();
+        List<Product> products = new List<Product>();
 
         public Emporium()
         {
             InitializeComponent();
 
             restartList();
-            generateButtons();
-
-
+            fillButtonsList();
         }
 
         public void restartList()
         {
             String aux = DBConector.readEntry("ID_Product", "Products");
+            List<string> ids = new List<string>();
             
             if (aux != ("§"))
             {
-                IDList = aux.Split('§').ToList();
+                ids = (aux.Split('§').ToList());
+
+                foreach (string currID in ids)
+                {
+                    products.Add(new Product(currID));
+                }
             }
         }
 
-        public void generateButtons()
+        public void fillButtonsList()
         {
             int auxX = 0;
             int auxY = 0;
 
-            for (int i = 0; i < (IDList.Count - 1); i++)
+            for (int i = 0; i < (products.Count - 1); i++)
             {
                 if (auxX > 2)
                 {
@@ -47,11 +51,10 @@ namespace Beta_MdVA
                     auxY++;
                 }
 
-                Product newProd = new Product(IDList[i]);
+                Product newProd = products[i];
 
                 Button createItem = new Button()
                 {
-                    Text = $"{newProd.getName()}\n{newProd.getValue()}",
                     Location = new Point(23 + auxX * 160, 5 + auxY * 160),
                     Size = new Size(125, 125),
                     BackColor = Color.Transparent,
@@ -74,6 +77,30 @@ namespace Beta_MdVA
             }
         }
 
+        private void generatePanel()
+        {
+            int auxX = 0;
+            int auxY = 0;
+
+            foreach (Product productFromList in products)
+            {
+                Panel item = new Panel();
+                PictureBox pctrBx_Image = new PictureBox();
+                Label lbl_Info = new Label();
+
+                item.Size = new Size(125, 150);
+                item.BackColor = Color.Transparent;
+
+                pctrBx_Image.Size = new Size(125, 125);
+                pctrBx_Image.Location = new Point(0, 0);
+                pctrBx_Image.Image = (Image)(new Bitmap(productFromList.getPicture(), new Size(125, 125)));
+                pctrBx_Image.BackColor = Color.Transparent;
+
+                lbl_Info.Text = $"{productFromList.getName()}\n{productFromList.getValue()}";
+                lbl_Info.Font = new Font();
+            }
+        }
+
         private void CreateItem_Click(object sender, EventArgs e)
         {
             Product p = ((Product)((Control)sender).Tag);
@@ -81,11 +108,6 @@ namespace Beta_MdVA
             Conductor.addToShoppingCart(p, 1);
 
             Conductor.changeForm(2);
-        }
-
-        private void Emporium_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

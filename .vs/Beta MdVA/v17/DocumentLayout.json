@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\DumpMDVA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5742A267-AA28-40E6-938E-B3FECF06DBF6}|Beta MdVA\\Beta MdVA.csproj|c:\\users\\user\\source\\repos\\dumpmdva\\beta mdva\\confirmage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5742A267-AA28-40E6-938E-B3FECF06DBF6}|Beta MdVA\\Beta MdVA.csproj|solutionrelative:beta mdva\\confirmage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5742A267-AA28-40E6-938E-B3FECF06DBF6}|Beta MdVA\\Beta MdVA.csproj|C:\\Users\\User\\source\\repos\\DumpMDVA\\beta mdva\\emporium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5742A267-AA28-40E6-938E-B3FECF06DBF6}|Beta MdVA\\Beta MdVA.csproj|solutionrelative:beta mdva\\emporium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5742A267-AA28-40E6-938E-B3FECF06DBF6}|Beta MdVA\\Beta MdVA.csproj|c:\\users\\user\\source\\repos\\dumpmdva\\beta mdva\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5742A267-AA28-40E6-938E-B3FECF06DBF6}|Beta MdVA\\Beta MdVA.csproj|C:\\Users\\User\\source\\repos\\DumpMDVA\\beta mdva\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5742A267-AA28-40E6-938E-B3FECF06DBF6}|Beta MdVA\\Beta MdVA.csproj|solutionrelative:beta mdva\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5742A267-AA28-40E6-938E-B3FECF06DBF6}|Beta MdVA\\Beta MdVA.csproj|C:\\Users\\User\\source\\repos\\DumpMDVA\\beta mdva\\emporium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5742A267-AA28-40E6-938E-B3FECF06DBF6}|Beta MdVA\\Beta MdVA.csproj|solutionrelative:beta mdva\\emporium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5742A267-AA28-40E6-938E-B3FECF06DBF6}|Beta MdVA\\Beta MdVA.csproj|c:\\users\\user\\source\\repos\\dumpmdva\\beta mdva\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5742A267-AA28-40E6-938E-B3FECF06DBF6}|Beta MdVA\\Beta MdVA.csproj|solutionrelative:beta mdva\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5742A267-AA28-40E6-938E-B3FECF06DBF6}|Beta MdVA\\Beta MdVA.csproj|c:\\users\\user\\source\\repos\\dumpmdva\\beta mdva\\emporium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5742A267-AA28-40E6-938E-B3FECF06DBF6}|Beta MdVA\\Beta MdVA.csproj|solutionrelative:beta mdva\\emporium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5742A267-AA28-40E6-938E-B3FECF06DBF6}|Beta MdVA\\Beta MdVA.csproj|c:\\users\\user\\source\\repos\\dumpmdva\\beta mdva\\emporium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5742A267-AA28-40E6-938E-B3FECF06DBF6}|Beta MdVA\\Beta MdVA.csproj|solutionrelative:beta mdva\\emporium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5742A267-AA28-40E6-938E-B3FECF06DBF6}|Beta MdVA\\Beta MdVA.csproj|C:\\Users\\User\\source\\repos\\DumpMDVA\\beta mdva\\confirmage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5742A267-AA28-40E6-938E-B3FECF06DBF6}|Beta MdVA\\Beta MdVA.csproj|solutionrelative:beta mdva\\confirmage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,13 +46,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Cart.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DumpMDVA\\Beta MdVA\\Cart.cs",
               "RelativeDocumentMoniker": "Beta MdVA\\Cart.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\DumpMDVA\\Beta MdVA\\Cart.cs",
               "RelativeToolTip": "Beta MdVA\\Cart.cs",
-              "ViewState": "AQIAAKAAAAAAAAAAAAAAwKcAAAAkAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-02T13:44:50.282Z",
               "EditorCaption": ""
@@ -71,20 +71,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Emporium.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DumpMDVA\\Beta MdVA\\Emporium.cs",
               "RelativeDocumentMoniker": "Beta MdVA\\Emporium.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\DumpMDVA\\Beta MdVA\\Emporium.cs",
               "RelativeToolTip": "Beta MdVA\\Emporium.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAAAAAA",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAwwGMAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-02T13:41:08.758Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Emporium.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DumpMDVA\\Beta MdVA\\Emporium.cs",
               "RelativeDocumentMoniker": "Beta MdVA\\Emporium.cs",
@@ -96,15 +96,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "ConfirmAge.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DumpMDVA\\Beta MdVA\\ConfirmAge.cs",
               "RelativeDocumentMoniker": "Beta MdVA\\ConfirmAge.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\DumpMDVA\\Beta MdVA\\ConfirmAge.cs [Design]",
               "RelativeToolTip": "Beta MdVA\\ConfirmAge.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T13:37:22.608Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-02T13:37:22.608Z"
             }
           ]
         }

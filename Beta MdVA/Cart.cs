@@ -18,9 +18,6 @@ namespace Beta_MdVA
         {
             InitializeComponent();
 
-            lbl_Title.BackColor = Color.Transparent;
-            pnl_WorkSpace.BackColor = Color.FromArgb(50, 0, 0, 0);
-
             foreach (KeyValuePair<String, CartItem> currentPair in Conductor.shoppingCart)
             {
                 pnl_CartList.Controls.Add(createItem(currentPair));
@@ -52,6 +49,7 @@ namespace Beta_MdVA
                 Text = $"{pair.Value.getProduct().getName()}",
                 Location = new Point(131 + (319 / 2), 30),
                 BackColor = Color.Transparent,
+                ForeColor = Color.White,
             };
 
             NumericUpDown quantity = new NumericUpDown()
@@ -61,6 +59,8 @@ namespace Beta_MdVA
                 Size = new Size(80, 70),
                 Value = pair.Value.getQuantity(),
                 Tag = pair.Key,
+                Minimum = 1,
+                Maximum = pair.Value.getProduct().getQuantity(),
             };
 
             Button bttnAdd = new Button()
@@ -82,6 +82,8 @@ namespace Beta_MdVA
             };
 
             productName.Location = new Point(131 + (299 / 2) - (productName.Width / 2), 30);
+
+            quantity.ValueChanged += changeDictionary;
 
             bttnAdd.Click += incrementQuantity;
             bttnTake.Click += decrementQuantity;
@@ -177,6 +179,12 @@ namespace Beta_MdVA
         private void bttn_Purchase_Click(object sender, EventArgs e)
         {
             Conductor.changeForm(3);
+        }
+
+        private void changeDictionary(object sender, EventArgs e)
+        {
+            Conductor.shoppingCart["" + ((Control)sender).Tag].setQuantity(int.Parse("" + ((NumericUpDown)sender).Value));
+
         }
     }
 }
